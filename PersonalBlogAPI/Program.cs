@@ -49,13 +49,13 @@ namespace PersonalBlogAPI
                 Path.Combine(Directory.GetCurrentDirectory(), filePath)),
                 RequestPath = "/Photos"
             });
-            //Enable directory browsing
-            app.UseDirectoryBrowser(new DirectoryBrowserOptions
-            {
-                FileProvider = new PhysicalFileProvider(
-                            Path.Combine(Directory.GetCurrentDirectory(), filePath)),
-                RequestPath = "/Photos"
-            });
+            ////Enable directory browsing
+            //app.UseDirectoryBrowser(new DirectoryBrowserOptions
+            //{
+            //    FileProvider = new PhysicalFileProvider(
+            //                Path.Combine(Directory.GetCurrentDirectory(), filePath)),
+            //    RequestPath = "/Photos"
+            //});
 
             app.MapControllers();
 
